@@ -48,12 +48,6 @@ contract Adoption {
 }
 ```
 
-#### 2.2. Compile และ Migrate
-#### ทำการคอมไพล์ Smart Contracts โดยใช้คำสั่ง
-
-```
-truffle compile
-```
 
 โปรดตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป
 
