@@ -48,6 +48,9 @@ contract Adoption {
 }
 ```
 
+### 2.2. compile และ migrate
+ทำการคอมไฟล์ Smart Contracts โดยใช้คำสั่ง
+
 
 โปรดตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป
 
@@ -78,6 +81,7 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
+
 ### 2.3. ทดสอบ Smart Contract
 ใช้ Visual Studio Code ในการสร้างไฟล์ TestAdoption.sol เพื่อทดสอบ Adoption.sol และบันทึกลงในไดเร็กทอรี test 
 
