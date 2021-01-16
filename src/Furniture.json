@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P1.jpeg",
+    "color": "สีขาว",
+    "price": "15,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 1,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P2.jpeg",
+    "color": "สีครีม",
+    "price": "15,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 2,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P3.jpeg",
+    "color": "สีน้ำตาล",
+    "price": "20,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 3,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P4.jpeg",
+    "color": "สีเทา",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 4,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P5.jpeg",
+    "color": "สีชมพู",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 5,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P6.jpeg",
+    "color": "สีน้ำเงิน",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 6,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P7.jpeg",
+    "color": "สีแดง",
+    "price": "1,0000 THB",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 7,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P8.jpeg",
+    "color": "สีน้ำเงิน",
+    "price": "1,000",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 8,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P9.jpeg",
+    "color": "สีเทา",
+    "price": "1,000",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 9,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P10.jpeg",
+    "color": "สีขาว",
+    "price": "595 THB",
+    "leng": "20.5 x 27.5 ซม."
+  },
+  {
+    "id": 10,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P11.jpeg",
+    "color": "สีเทา",
+    "price": "3,590 THB",
+    "leng": "40.6 x 68.6 ซม."
+  },
+  {
+    "id": 11,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P12.jpeg",
+    "color": "สีขาว",
+    "price": "795 THB",
+    "leng": "33 x 33 x 55 ซม."
+  }
+]
