@@ -68,7 +68,7 @@ module.exports = function(deployer) {
 
 ![ganache](https://user-images.githubusercontent.com/77536689/104815368-a5599a80-5846-11eb-9e40-cdcff82b1a51.jpg)
 
-ที่ Workspace Name ให้ตั้งชื่อเช่น CHF274 แล้วคลิก Save Workspace
+ที่ Workspace Name ให้ตั้งชื่อเช่น CNF274 แล้วคลิก Save Workspace
 
 ![Addproject](https://user-images.githubusercontent.com/77536689/104815399-dfc33780-5846-11eb-832e-cf16bd9207f2.jpg)
 
