@@ -153,6 +153,83 @@ truffle test
 
 สร้างผลลัพธ์เช่นรูปข้างต้นได้โดยใช้ไฟล์ ```src/index.html``` โปรดเปิดไฟล์นี้โดยใช้ Visual Studio Code และสำรวจโครงสร้างของไฟล์ สังเกตได้ว่า มีส่วนที่เป็น Template ในขณะที่ข้อมูลที่ใช้ในการแสดงผลจะถูกกำหนดโดยส่วน Backend
 
+### 3.1 ในส่วนของไฟล์ ```src/index.html``` ให้มีโค้ดดังนี้
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pete's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: pink;">
+  
+        <nav class="navbar navbar-inverse" style="background: lavenderblush;height: 100px;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">                     
+              </button>
+              <a class="navbar-brand" style="font-style: oblique;margin-left: 590px;font-size: 50px;margin-top: 25px;">Welcome to Furniture Shop</a>
+            </div>
+           
+          </div>
+        </nav>
+        
+        <!-- <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Welcome to Furniture Shop</h1>
+          <hr/>
+          <br/>
+        </div> -->
+
+        <div class="container">
+      <div id="FurnituresRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="FurnitureTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-danger panel-Furniture">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>color</strong>: <span class="Furniture-color">สี</span><br/>
+            <strong>price</strong>: <span class="Furniture-price">Warren, MI</span><br/>
+            <strong>leng</strong>: <span class="Furniture-leng">Warren, MI</span><br/><br/>
+            <button class="btn btn-default btn-adopt" type="button" data-id="0">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+```
+
 ## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
 แก้ไขไฟล์ ```src/js/app.js``` ให้มีโค้ดดังนี้
 
@@ -279,6 +356,110 @@ $(function() {
  });
 });
 ```
+
+#### 4.2 อัพเดทข้อมูลในไฟล์ Furniture.json ซึ่งอยู่ใน folder ของ src ให้เป็นดังนี้
+
+```
+[
+  {
+    "id": 0,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P1.jpeg",
+    "color": "สีขาว",
+    "price": "15,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 1,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P2.jpeg",
+    "color": "สีครีม",
+    "price": "15,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 2,
+    "name": "โซฟา 2 ที่นั่ง ",
+    "picture": "images/P3.jpeg",
+    "color": "สีน้ำตาล",
+    "price": "20,000 THB",
+    "leng": "190 x 101 x 85 ซม."
+  },
+  {
+    "id": 3,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P4.jpeg",
+    "color": "สีเทา",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 4,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P5.jpeg",
+    "color": "สีชมพู",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 5,
+    "name": "เบาะนั่งเม็ดโฟม",
+    "picture": "images/P6.jpeg",
+    "color": "สีน้ำเงิน",
+    "price": "2,990 THB",
+    "leng": "80 x 80 x 90 ซม."
+  },
+  {
+    "id": 6,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P7.jpeg",
+    "color": "สีแดง",
+    "price": "1,0000 THB",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 7,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P8.jpeg",
+    "color": "สีน้ำเงิน",
+    "price": "1,000",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 8,
+    "name": "เบาะนั่งทรงหยดน้ำ",
+    "picture": "images/P9.jpeg",
+    "color": "สีเทา",
+    "price": "1,000",
+    "leng": "60 x 60 x 110 ซม."
+  },
+  {
+    "id": 9,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P10.jpeg",
+    "color": "สีขาว",
+    "price": "595 THB",
+    "leng": "20.5 x 27.5 ซม."
+  },
+  {
+    "id": 10,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P11.jpeg",
+    "color": "สีเทา",
+    "price": "3,590 THB",
+    "leng": "40.6 x 68.6 ซม."
+  },
+  {
+    "id": 11,
+    "name": "โคมไฟตั้งโต๊ะ",
+    "picture": "images/P12.jpeg",
+    "color": "สีขาว",
+    "price": "795 THB",
+    "leng": "33 x 33 x 55 ซม."
+  }
+]
+```
+
 ## 5. ติดตั้ง MetaMask
 - ติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
